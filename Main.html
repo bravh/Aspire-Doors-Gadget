@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "ייצור חזיתות " <html>
+
+<head>
+  <script type="text/javascript" src="C:\\ProgramData\\Vectric\\Aspire\\V10.5\\Gadgets\\TestGadget\\testrgadgetsfunctions.js"></script>
+  <style>
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      font-size: 33;
+      table-layout: fixed;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <title>ייצור חזיתות</title>
+</head>
+
+<Body style="background-color:lightgrey">
+  <div><table style="align-self: center;width: 370; ">
+    <div>
+      <div>
+          <th><input  id="ordern" >  לקוח / הזמנה </th>
+     </div>
+     
+      <th><div id = "kamut">כמות </div></th>
+      
+  
+  </div>
+
+  
+  </table>
+    
+    
+    <table style="align-self: center;width: 370; ">
+      
+      <th colspan=2 style="color: rgb(0, 0, 0); font-size: 40;">
+        הכנס מידות
+      </th>
+     
+
+      <tr>
+        <th><input  type="number" id="gova" value="0"> רוחב </th>
+        <th><input   type="number" id="rohav" value="0" > גובה </th>
+      </tr>
+
+      <th colspan="2">
+        <button onclick="removeSelectedRow()">מחק</button>
+
+        <button onclick="editHtmlTbleSelectedRowfirst()">שנה</button>
+
+        <button onclick="addHtmlTableRowfirst()"> הכנס</button>
+        <p id = "modelName" style="color:firebrick; font-size:large">לא נבחר דגם</p>
+       
+        <input type="textfield" id = "rohavmisgeret" size = "3">
+        <input id = "onoff" type="checkbox" onclick = "statusmisgeret()"  checked>מסגרת 
+
+
+        <button class = "LuaButton" ID = "manufact" value="OK">צור חזיתות </button>
+      
+        
+        
+
+        
+        
+        
+        <button  onclick = "opentoolpath()">בחר דגם  </button>       
+        <button onclick = "writeFile()">שמור מידות </button>
+        <button onclick = "openDim()">פתח מידות </button>
+
+
+      </th>
+
+
+    </table>
+    <table style=" align-self:center ;width: 370">
+      <th style="font-size: 20;"> לעריכה בחר שורה
+      </th>
+    </table>
+    <output  style="visibility: hidden" type="file" id="fileUpload" style.visibility = "hidden">
+
+  </div>
+  <div>
+    <table for="file" id="table" style=" width: 370; tableLayout:fixed "  >
+
+
+
+    </table >
+
+  </div>
+
+  <input  id="fileInput" type="file"  style="display:none" >
+  <input  id="savefile" type="file" name="inputfile" style="display:none" >
+  <input  id="mida" type="TextField"  style="display:none">
+  <input  id="toolpathpath" type="TextField"  style="display:none">
+  <input  id="kamutl" type="TextField"  style="display:none">
+ 
+ 
+  
+
+
+
+</Body>
+
+
+</html>
